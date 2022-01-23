@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%=title%>
+    </title>
+    <%- include ('partials/head.html') %>
+
+</head>
+
+<body>
+    <%- include ('partials/navigation.html') %>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="card contact-form col-4 col-10">
+                    <h1 class="text-center">Contactame</h1>
+                    <form action="">
+                        <label for="">Nombre </label>
+                        <input class="input" type="text" required name="nombre" placeholder="Ingrese su nombre"><br>
+
+                        <label for="">Apellido </label>
+                        <input class="input" type="text" required name="apellido" placeholder="Ingrese su apellido"><br>
+
+                        <label for="">Página </label>
+                        <input class="input" type="text" required name="pagina"
+                            placeholder="Ingrese link de su pagina"><br>
+
+                        <label for="">Ingresar documento </label>
+                        <input class="input " type="file" name="holaVida"><br>
+
+                        <label for="">Mensaje </label><br>
+                        <textarea class="input" name="mensaje" id="" cols="25" rows="4"
+                            placeholder="Mensaje"></textarea><br>
+
+                        <label for="">Genero </label>
+                        <select class="input" name="genero" required id="">
+                            <option selected disabled>Seleccione una opción</option>
+                            <option value="1">Masculino</option>
+                            <option value="2">Femenino</option>
+                        </select><br>
+
+                        <input type="checkbox" id="term">
+                        <label class="termi" for="term">Leí y estoy de acuerdo con
+                            <a class="cond" href="">los terminos y condiciones.</a>
+                        </label><br>
+
+                        <input class="boton col-md-6" type="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <%- include ('partials/footer.html')%>
+
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+/*----Body-----*/
+
+body{
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(to bottom,#cccccc,#ffffff);
+
+}
+/*---Header---*/
+.header{
+    min-height:2%;
+    width: 100%;
+    background: #191919;
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h3{
+    font-size: 24;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+.nav-links ul li a::before{
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 0;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    display: block;
+    transition: 0.5s;
+    margin: auto;
+}
+.nav-links ul li a:hover::before{
+    width: 100%;
+}
+
+
+/*------footer------*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background: #191919;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: rgb(114, 114, 114);
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/*----Contact me----*/
+.contact-form{
+    width: 600px;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 20%;
+    background-color: #fbfbfb;
+    padding-left: 30px;
+}
+
+textarea{
+  resize: none;
+}
+  
+  form .input{
+    padding: 10px 15px;
+    border-radius: 3px;
+    border: 1px solid #bbbbbb;
+    transition: .3s ease all;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .card{
+    width: 600px;
+    padding: 50px;
+    background: rgb(255, 255, 255);
+    border-radius: 3px;
+    box-shadow: 0px 0px 30px rgba(216, 216, 216, 0.3);
+  }
+
+  form .input:focus{
+    border: 1px solid#1c78da;
+    outline: none;
+  }
+  textarea {
+    height: 150px;
+  }
+  
+  .boton{
+    width: 30%;
+    height: 50px;
+    transition: 0.5s;
+    border: 20px;
+    border-radius: 5px;
+    margin: 165px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background: #bbbbbb;
+}
+  .boton:hover{
+    background: #181818;
+    color: #fff;
+    box-shadow: 0 3px 7px rgb(0, 0, 0,0.7);
+  }
+  
+  .termi .cond{
+    font-size: 16px;
+    color: #2463b6;
+    text-decoration:underline;
+  }
+  @media screen and (max-width:930px) {
+    .boton{
+      margin: 20px 140px;
+    }
+  }
+
+/*--------Section--------*/
+img{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.imagen img {
+  width: 250px;
+  margin-left: 100px;
+  object-fit: cover;
+}
+.contenido{
+  display: flex;
+  width: 100%;
+  height: 40vh;
+  background: #1c1a2b;
+  color: #fff;
+}
+
+.articulos{
+  width: 90%;
+  border-width: 3px solid #191919;
+}
+
+.secciones{
+  display: flex;
+  align-items: center;
+  padding:20px;
+  justify-content: space-between;
+}
+
+
+

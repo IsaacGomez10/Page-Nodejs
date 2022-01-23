@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title%>
+    </title>
+
+    <!--la sintaxis cambio para traer un elemento de otra carpeta siendo 
+            antes, cambiando ahora a la que esta abajo y en diferentes archivos.-->
+    <%- include ('partials/head.html') %>
+</head>
+
+<body>
+    <%- include ('partials/navigation.html') %>
+
+        <div class="container">
+            <header class="row">
+                <div class="col-md-12 text-center">
+                    <h1>Página Principal</h1>
+                    <img class="imagen" src="/img/imagen.png" alt="Logo">
+                </div>
+            </header>
+        </div>
+
+        <!--Sectio One-->
+        <div class="contenido" id="about">
+            <div class="articulos">
+                <div class="secciones">
+                    <div class="col-md-6">
+                        <h3>Aprendiendo con Nodejs en Visual Code</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Ipsum, assumenda magni corrupti neque hic, quis
+                            illum sapiente voluptate.</p>
+                    </div>
+                    <div class="imagen"> <img src="/img/Visual_Studio.png" alt="Logo-VSC"></div>
+                </div>
+            </div>
+        </div>
+
+        <%- include ('partials/footer.html') %>
+</body>
+
+</html>
